@@ -1,13 +1,18 @@
-.front-image {
-    margin: 0 200px 0 200px;
+body {
+    display: flex;
+    background-image: url(../Assets/Italyada-en-cok-tercih-edilen-bolumler-780x470.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#menu-header {
+    
 }
 
 .container {
     display: flex;
-    font-family: 'Lucida Sans';
-    font-weight: 700;
-    font-size: 18px;
-    color: aqua;
+    justify-content: center;
     
 }
 
