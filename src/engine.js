@@ -1,11 +1,10 @@
 function showSidebar() {
-    const sidebar = document.querySelector('.sidebar')
+    const sidebar = document.querySelector('.main-sidebar')
     sidebar.style.display ='flex'
 }
 
 function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar')
+    const sidebar = document.querySelector('.main-sidebar')
     sidebar.style.display = 'none';
 }
-
-/* opne/close hamburger menu, will add effects later*/
+/* open/close hamburger menu, will add effects later*/
