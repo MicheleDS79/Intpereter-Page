@@ -30,6 +30,7 @@ nav li{
     height: 50px;
 }
 nav a{
+    position: relative;
     height: 100%;
     padding: 0 30px;
     position: relative;
@@ -39,7 +40,6 @@ nav a{
     color: #2f2f2f;
 }
 nav a:hover{
-    position: relative;
     background-color: bisque;
 }
 nav a::before {
