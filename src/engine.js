@@ -29,6 +29,9 @@ currentState === "closed") {
     });
 });
 
+showSidebar.addEventListener('click', openMobileMenu);
+hideSidebar.addEventListener('click', closeMobileMenu);
+
         
 
 

@@ -81,25 +81,6 @@ nav li:first-child{
 .main-sidebar a{
     width: 100%;
 }
-.menu-button{
-    --button-color: black;
-    overflow: hidden;
-}
-.menu-button .hamburger{
-    transition: translate 1s, rotate 1s;
-} 
-.menu-button[aria-expanded="true"] .hamburger {
-    translate: 10px -10px;
-    rotate: 0.125turn;
-}
-.menu-button .line {
-    transition: 1s;
-    stroke-dasharray: 60 31 60 300;
-}
-.menu-button[aria-expanded="true"] .line {
-    stroke-dasharray: 60 105 60 300;
-    stroke-dashoffset: -90;
-}
 
 
 @media(max-width: 800px){
