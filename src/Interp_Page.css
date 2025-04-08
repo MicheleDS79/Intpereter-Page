@@ -113,8 +113,8 @@ nav li:first-child{
 .nav-desktop {
     display: flex; /* Make navbar desktop a flex container */
     align-items: center; /* Vertically center items */
-    flex-grow: 1; 
-    justify-content: flex-end;
+    flex-grow: 1;  /* Allow nav-desktop to take up available space */
+    justify-content: flex-end; /* Push content to the right */
 }
 
 .nav-desktop ul {
