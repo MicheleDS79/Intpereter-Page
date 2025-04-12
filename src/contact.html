@@ -4,13 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike Sherokee - Let's Talk!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&display=swap" rel="stylesheet"/>
 </head>
 <body>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
 
+            min-height: 100vh;
+            background-image: url(../Assets/san-vigilio-in-lago-di-garda-jtml1crp768h567u.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: auto;
+            font-family: 'Nunito Sans';
+        }
+
+        div {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #form {
+            max-width: 620px;
+            margin: 640px;
+            padding: auto;
+            outline: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            color:red
+            
+        }
+
+        #services {
+            padding: 5px 0 5px 9px;
+            align-items: center;
+        }
+
+        .button {
+            margin: 0 auto;
+            width: 150px;
+            height: 30px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
 
     </style>
-    <form>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    Options for your services...
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+    <form id="form">
         Please contact me! 
         <p>
             <label> First Name  <input type="text" name="firstname"></label> 
@@ -19,23 +75,32 @@
           <label>  Last Name  <input type="text" name="lastname"></label>  
         </p>
         <p>
+            <label>  email  <input type="text" name="email"></label>  
+          </p>
+          <p>
+            <label>  phone  <input type="phone" name="phone"></label>  
+          </p>
+          <p>
+            <label>  Brief message for me  <input type="textarea" name="message" rows="15" cols="30"></label>  
+          </p>
+        <p>
           <label> Tell me what you need! 
             <select id="services" name="services">
-                <option value="translation">translation</option>
+                <option value="translation"> translation </option>
                 <option value="interpreting">interpreting service</option>
                 <option value="sworn translation"> sworn translation</option>
                 <option value="editing">editing</option>
                 <option value="language instruction">language instruction</option>
                 <option value="consult">consult</option>
-
+                <option value="consult">Language Tech Services</option>
           </select>
         </label>
         </p>
-        <button>
+        <button class="button" type="submit">
             Book Appointment
         </button>
     </input>
     </form>
-    
+    </div>
 </body>
 </html>
