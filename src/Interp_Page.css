@@ -67,7 +67,7 @@ nav a::before {
     bottom: 0;
     left: 0;
     transform: scaleX(0);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 nav a:hover::before{
@@ -102,13 +102,38 @@ nav li:first-child{
     width: 100%;
 }
 
-.menu-button-hamburger{
+.button{
     color: black;
+    background: transparent;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer; /* Add cursor style to indicate it's clickable */
 }
+
+.button[data-state="closed"] :is(.top, .bottom) {
+    animation: to-open-icon 1s forwards;
+}
+
+.button[data-state="opened"] :is(.top, .bottom) {
+    animation: to-open-icon 1s forwards;
+}
+
+.button {
+    transition: rotate 800ms 100ms;
+}
+
+.button[data-state="opened"] .hamburger {
+    rotate: 1turn;
+}
+
+.button .line.top {
+    --rotation: -45deg;
+    transform-origin: 65px 45px; 
+}
+
+
 
 .nav-desktop {
     display: flex; /* Make navbar desktop a flex container */

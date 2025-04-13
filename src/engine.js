@@ -9,8 +9,7 @@ function hideSidebar() {
 }
 /* open/close hamburger menu, will add effects later*/
 
-const buttons =
-document.querySelectorAll("button");
+const buttons = document.querySelectorAll("menu-button-hamburger");
 
 buttons.forEach((button) => {
     button.addEventListener("click",
@@ -21,7 +20,7 @@ button.getAttribute("data-state");
     if (!currentState || 
 currentState === "closed") {
     button.setAttribute("data-state", "opened");
-    button.setAttribute("aria-expanded", "expanded", "true");
+    button.setAttribute("aria-expanded", "true");
 } else {
     button.setAttribute("data-state", "closed");
     button.setAttribute("aria-expanded", "false");
