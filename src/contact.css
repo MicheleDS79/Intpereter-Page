@@ -1,0 +1,65 @@
+body {
+    background-image: url(../Assets/san-vigilio-in-lago-di-garda-jtml1crp768h567u.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: auto;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+}
+
+div {
+    position: center;
+}
+
+input {
+width: 100%;
+height: 60%;
+border-radius: 8px;
+font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+    div {
+        min-width: 520px;
+    }
+}
+
+#form {
+    background-color:ghostwhite;
+    max-height: 6840px;
+    max-width: 540px;
+    margin: 500px auto 350px auto;
+    padding: 15px;
+    outline: 2px solid red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    color:rgb(175, 17, 91);
+        
+}
+
+#message {
+    cursor: pointer; 
+    float: left;
+}
+
+.select-services {
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+#services {
+    display: flex;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+}
+
+.button {
+    margin: 0 auto;
+    width: 200px;
+    height: 45px;
+    margin-top: 30px;
+    font-size: 18px;
+
+}
