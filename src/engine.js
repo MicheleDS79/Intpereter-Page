@@ -9,7 +9,7 @@ function hideSidebar() {
 }
 /* open/close hamburger menu, will add effects later*/
 
-const buttons = document.querySelectorAll("menu-button-hamburger");
+const buttons = document.querySelectorAll("button");
 
 buttons.forEach((button) => {
     button.addEventListener("click",

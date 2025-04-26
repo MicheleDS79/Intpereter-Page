@@ -5,7 +5,7 @@
 
 body{
     min-height: 100vh;
-    background-image: url(./Assets/wp4422638-1640005270.jpg);
+    background-image: url(./assets/wp4422638-1640005270.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: auto;
@@ -106,9 +106,8 @@ nav li:first-child{
     color: black;
     background: transparent;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
     cursor: pointer; /* Add cursor style to indicate it's clickable */
 }
 
