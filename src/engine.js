@@ -1,37 +1,28 @@
+/* sidebar open/close + animation */
+
 function showSidebar() {
     const sidebar = document.querySelector('.main-sidebar')
     sidebar.style.display = 'flex'
 }
 
 function hideSidebar() {
-    const sidebar = document.querySelector('.main-sidebar')
+    const openButton = document.querySelector('button[onclick="showSidebar()"]');
+    if (openButton) {
+        openButton.setAttribute('aria-expanded', 'true');
+    }
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.main-sidebar');
     sidebar.style.display = 'none'
 }
-/* open/close hamburger menu, will add effects later*/
 
-const buttons = document.querySelectorAll("button");
+const closeButton = document.querySelector('button[onclick="hideSidebar()"]');
+if (closeButton) {
+    closeButton.setAttribute('aria-expanded', 'false');
+}
 
-buttons.forEach((button) => {
-    button.addEventListener("click",
-() => {
-    const currentState = 
-button.getAttribute("data-state");
 
-    if (!currentState || 
-currentState === "closed") {
-    button.setAttribute("data-state", "opened");
-    button.setAttribute("aria-expanded", "true");
-} else {
-    button.setAttribute("data-state", "closed");
-    button.setAttribute("aria-expanded", "false");
-        } 
-    });
-});
-
-showSidebar.addEventListener('click', openMobileMenu);
-hideSidebar.addEventListener('click', closeMobileMenu);
-
-        
 
 
     
